@@ -1,0 +1,27 @@
+<!-- <form>
+    <p>register works!</p>
+    <input type="text" name="username" id="" placeholder="UserName">
+    <input type="password" name="password" id="" placeholder="Password">
+    <button>Register</button>
+</form> -->
+<div class="container">
+    <h3>Create Account</h3>
+    <div class="form-group">
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput type="text" [(ngModel)]="username" name="username" required/>
+      </mat-form-field>
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" [(ngModel)]="password" required/>
+      </mat-form-field>
+    </div>
+    <pre></pre>
+    <button mat-flat-button color="primary" (click)="register()">Register</button>
+    <br><br>
+    <p>Already have an account? <a routerLink="/login">Login</a></p>
+  </div>
+  

@@ -1,0 +1,34 @@
+<!-- <p>Car Creation</p> <br>
+
+<label>Model</label>
+<input type ="text"  [(ngModel)]="model" /> <br>
+
+<label>HP</label>
+<input type ="number" [(ngModel)]="hp"/><br>
+
+<label>Marque</label>
+<input type ="text" [(ngModel)]="marque"/><br>
+
+<button (click)="saveMe()" > Save</button> -->
+<div class="container">
+<p>Car Creation</p> <br>
+
+<mat-form-field>
+  <mat-label>Model</mat-label>
+  <input matInput type="text" [(ngModel)]="model">
+</mat-form-field> <br>
+
+<mat-form-field>
+  <mat-label>HP</mat-label>
+  <input matInput type="number" [(ngModel)]="hp">
+</mat-form-field> <br>
+
+<mat-form-field>
+  <mat-label>Marque</mat-label>
+  <input matInput type="text" [(ngModel)]="marque">
+</mat-form-field> <br>
+
+<button mat-raised-button color="primary" (click)="saveMe()">Save</button>
+
+</div>
+
